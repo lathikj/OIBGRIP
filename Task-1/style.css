@@ -1,0 +1,257 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: goldenrod;
+    color: white;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Karla:ital@1';
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Karla:ital@1';
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+
+.navbar ul li{
+    display: inline-block;
+
+}
+
+.navbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;   
+}
+
+.navbar ul li a:hover{
+    background-color: gray;
+}
+body{
+    background-color: black;
+}
+.content{
+     font-family: 'Karla:ital@1';
+     color: white;
+     margin-top: 30%;
+     margin-left: 100px;
+
+}
+
+h1{
+    float: left;
+    font-size: 60px;
+    position: center;
+
+}
+
+p{
+    margin-top: 10px;
+
+}
+
+.contact{
+    position: relative;
+    font-family: 'Karla:ital@1';
+    min-height: 10vh;
+    padding: 30px 40px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191900;
+    background-size: cover; 
+}
+
+.contact .content1{
+    max-height: 800px;
+    text-align: center;
+}
+
+.contact .content h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content1 p{
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 40%;    
+    padding: 40px;
+    background: gray;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    background-color: gray;
+    border-bottom: 2px solid white;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;    
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color:rgb(173, 15, 15);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #0390a2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20fr 20fr;
+}
+.btns{
+    margin-top: 20px;
+    background: white;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.btns:hover{
+    background: #848482;
+}
+
+img{
+    margin-top: 110px;
+    margin-left: 125px;
+    margin-right: 75px;
+    width: 525px;
+    filter: grayscale(1);
+}
+
+img:hover{
+    filter: grayscale(0);
+    transition: 2s;
+    cursor: pointer;
+}
